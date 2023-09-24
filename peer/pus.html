@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PUBLIC FEEDBACK FORM</title>
+		<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	    <link rel="stylesheet" type="text/css" href="w3.css">
+	    <style type="text/css">
+		body {
+ 
+    font-family: Arial;
+    margin: 0 !important;
+    padding:  0 !important;
+}
+		.title-bar {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+    background-image: url(https://shasuncollege.edu.in/wp-content/uploads/2017/06/bg-pagetitle.jpg);
+}
+.page-title, h3 {
+
+    color: #fff !important;
+        font-family: "Noto Serif";
+
+    line-height: 48px;
+    font-weight: normal;
+    font-style: normal;
+    color: #fff;
+    font-size: 34px;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.24s ease-in-out;
+    -moz-transition: opacity 0.24s ease-in-out;
+    transition: opacity 0.24s ease-in-out;
+
+}
+th{
+	color: white;
+	background-color: #3699ea;
+}
+th,td{
+	font-weight: lighter;
+	padding: 10px 20px;
+	border : 1px solid lightgrey;
+}
+a{ 
+  color: blue;
+}
+a:hover { 
+  color: blue;
+}
+table{
+	text-align: center;
+	border-collapse: collapse;
+	margin: 10px;
+	padding: 10px;
+}
+
+@media only screen and (max-width: 600px)  {
+	table{
+		width: 90%;
+	}
+	input{
+		width: 90%;
+	}
+	h3{
+		font-size: 20px;
+	}
+
+}
+label{
+	padding: 5px;
+}
+</style>
+</head>
+<body>
+	<center>
+		<div class="title-bar"><h3 class="page-title">PUBLIC FEEDBACK FORM</h3></div>	</center>
+<p style="padding-left: 20px;color: red;">*All the fields are required</p>
+ <form id="peer" method="POST" action="pus.php" >
+	<br/><label class="w3-padding ">Your Name:</label><br/>
+	<input type="text" name="name" required class="w3-margin w3-padding w3-light-grey" style="border:0px;" />
+	<br/><label class="w3-padding">Your Email:</label><br/>
+	<input type="email" name="email" required class="w3-margin w3-padding w3-light-grey" style="border:0px;" />
+	<br/><label class="w3-padding">Mobile:</label><br/>
+	<input type="number" name="mobile" required class="w3-margin w3-padding w3-light-grey" style="border:0px;" />
+	<br/><label class="w3-padding">Degree/ Subject Studying: </label><br/>
+	<input type="text" name="deg" required class="w3-margin w3-padding w3-light-grey" style="border:0px;" />
+	<p class="w3-padding w3-text-red">*Dear Public, Please read the following statements carefully and click the appropriate response :</p>
+	<center><table width="90%" class="w3-border w3-bordered " style="padding: 0px;margin: 0px;">
+		<tr>
+			<th>S. No</th>
+			<th>Statement</th>
+			<th>Select</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>MRIT has unique identity at the global level</td>
+			<td>
+				<label><input type="radio" name="1" value="Completely Agree" required/>Completely Agree</label><br/>
+				<label><input type="radio" name="1" value="Agree" required/>Agree</label><br/>
+				<label><input type="radio" name="1" value="Not Agree" required/>Not Agree</label>
+			</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Students of the MRIT are well placed in reputed organizations</td>
+			<td>
+				<label><input type="radio" name="2" value="Completely Agree" required/>Completely Agree</label><br/>
+				<label><input type="radio" name="2" value="Agree" required/>Agree</label><br/>
+				<label><input type="radio" name="2" value="Not Agree" required/>Not Agree</label>
+			</td>
+		</tr>
+			<tr>
+			<td>3</td>
+			<td>Relationship with the administrative personnel and officers is cordial</td>
+			<td>
+				<label><input type="radio" name="3" value="Completely Agree" required/>Completely Agree</label><br/>
+				<label><input type="radio" name="3" value="Agree" required/>Agree</label><br/>
+				<label><input type="radio" name="3" value="Not Agree" required/>Not Agree</label>
+			</td>
+		</tr>
+			<tr>
+			<td>4</td>
+			<td>Rules and Regulations set by the MRIT for women are easy to follow</td>
+			<td>
+				<label><input type="radio" name="4" value="Completely Agree" required/>Completely Agree</label><br/>
+				<label><input type="radio" name="4" value="Agree" required/>Agree</label><br/>
+				<label><input type="radio" name="4" value="Not Agree" required/>Not Agree</label>
+			</td>
+		</tr>
+			<tr>
+			<td>5</td>
+			<td>MRIT provide adequate career guidance for further studies</td>
+			<td>
+				<label><input type="radio" name="5" value="Completely Agree" required/>Completely Agree</label><br/>
+				<label><input type="radio" name="5" value="Agree" required/>Agree</label><br/>
+				<label><input type="radio" name="5" value="Not Agree" required/>Not Agree</label>
+			</td>
+		</tr>
+	
+	</table>
+<input type="submit" value="submit" class="w3-btn w3-blue w3-margin-top w3-margin-bottom" name="submit" /></center>
+</form>
+</body>
+</html>
